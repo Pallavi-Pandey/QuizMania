@@ -13,6 +13,22 @@ An interactive quiz platform with FastAPI backend and React frontend.
 
 ## Quick Start
 
+### Option 1: Using Docker (Recommended)
+
+```bash
+# Build and run both backend and frontend
+docker-compose up --build
+
+# Access the application
+# Frontend: http://localhost:3000
+# Backend API: http://localhost:8000
+
+# Stop the application
+docker-compose down
+```
+
+### Option 2: Manual Setup
+
 **Backend**
 
 ```bash
