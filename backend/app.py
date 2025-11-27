@@ -67,6 +67,8 @@ class Answer(BaseModel):
     answer: str
 
 class QuizSubmission(BaseModel):
+    quiz_id: int
+    username: str
     answers: List[Answer]
     time_taken: int
 
@@ -329,7 +331,7 @@ async def submit_quiz(submission: QuizSubmission):
     
     for i, answer in enumerate(submission.answers):
         question = quiz["questions"][i]
-        is_correct = answer == question["correct"]
+        is_correct = answer.answer == question["correct"]
         if is_correct:
             correct_answers += 1
         
