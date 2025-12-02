@@ -10,6 +10,7 @@ An interactive quiz platform with FastAPI backend and React frontend.
 * Timed quizzes with scoring
 * Leaderboard & user stats
 * Responsive modern UI
+  
 
 ## Quick Start
 
